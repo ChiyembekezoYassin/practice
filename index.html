@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .pp{
+            text-align: center;
+            color: rgb(255, 255, 255);
+            background-color: black;
+        }
+        .h33{
+            font-size: 23px;
+            color: rgb(255, 255, 255);
+            background-color: black;
+        }
+    </style>
+    <header id="h3" onmouseover="show()">
+        This is a header
+    </header>
+
+    <button id="btn">
+        Submit
+    </button>
+    <script>
+        // let name = window.prompt('What is your name?');
+        // name = name === null ? 'User' : name;
+        // alert('Welcome to DOM scripting ' + name);
+        // let response = confirm('Do you want close the tab?');
+        // if (response) {
+        //     close();
+        // }
+        
+        // setTimeout(() => {
+        //     let paragraphs = document.getElementsByTagName('p').classList.add('pp');
+        //     let link = document.getElementsById('google');
+        //     link.innerText = 'Google link!';
+        //     link.setAttribute('href', 'www.google.com');
+        //     let header3 = document.getElementById('h3');
+        //     header3.classList.add('h33');
+        //     let list = document.createElement('div');
+        //     let item1 = document.createElement('div');
+        //     let item2 = document.createElement('div');
+        //     let p1 = document.createElement('p');
+        //     p1.innerText = 'Moni dziko';
+        //     list.appendChild(item1);
+        //     list.appendChild(item2);
+        //     item1.appendChild(p1);
+        //     document.body.appendChild(list);
+        //     }, 5000);
+
+        function show() {
+            
+            let h33 = document.getElementById('h3');
+            h33.innerText = 'Muli njibwa';
+        }
+        document.getElementById('btn').addEventListener('click', () => {
+            alert('Hello world');
+        });
+        document.getElementById('btn').addEventListener('click', () => {
+            alert('Hello world kachiwiri');
+        });
+        
+    </script>
+</body>
+</html>
